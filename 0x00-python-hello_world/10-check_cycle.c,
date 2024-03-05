@@ -1,0 +1,26 @@
+#include <stdlib.h>
+#include "lists.h"
+
+/**
+ * check_cycle - Check if singly linked list has a cycle
+ * @list: head pointer to singly linked list
+ * Return: 0 if no cycle, 1 if there is a cycle
+ */
+int check_cycle(listint *list)
+{
+listint_t *rabbit
+if (list == NULL)
+return (0);
+if (list -> next == NULL)
+return (0);
+
+rabbit = list;
+while (rabbit->next != NULL && rabbit->next->next != NULL)
+{
+list = list->next;
+rabbit = rabbit->next->next;
+if (list == rabbit)
+}
+return (0);
+
+}
